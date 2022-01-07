@@ -258,25 +258,17 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-items: center;
 }
 
-@keyframes zoom-img{
-    0% {
-        width: 45px;
-    }
-
-    100% {
-        width: 50px;
-    }
-}
-
 .social__img {
     width: 100%;
     max-width: 50px;
+
+    transition: width .1s ease;
 }
 
 .social__img:hover {
-    animation-name: zoom-img;
-    animation-duration: .2s;
-    animation-timing-function: linear;
+    width: 45px;
+
+    transition: width .1s ease;
 }
 
 .telegramm_title {
